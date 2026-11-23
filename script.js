@@ -48,9 +48,15 @@
   "fact_seek": "Looking for",
   "fact_role_val": "Full Stack Developer",
   "fact_seek_val": "Full-time roles and freelance projects",
-  "contact_title": "Let's talk about your project",
-  "contact_p": "Tell me what you need to build or what profile you're looking for. I reply by email and on LinkedIn.",
-  "copy_btn": "Copy email",
+  
+"contact_title": "Let's build something amazing together! ✨",
+
+"contact_p": "Have a project in mind or looking for a Full Stack Developer to join your team? I'd love to hear about your ideas, explore new challenges, and build great solutions together. Let's connect!",
+
+"copy_btn": "Copy email",
+
+"send_email": "✉️ Send email",
+
   "footer_role": "Full Stack Developer · Bogotá",
   "globix_alt1": "Globix mobile app on a phone, with the Globix logo and shopping icons",
   "globix_alt2": "Globix web version showing recommendations and discounted products on the home screen",

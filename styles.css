@@ -392,3 +392,38 @@ body {
   .btn-primary { transition: none; }
   .btn-primary:hover { transform: none; }
 }
+
+/* Princess contact section */
+
+.contact {
+  background: linear-gradient(
+    135deg,
+    var(--surface) 0%,
+    var(--accent-soft) 100%
+  );
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: 0 16px 40px var(--shadow);
+}
+
+.email {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.email:hover {
+  color: var(--accent-2);
+}
+
+.contact .cta-row .btn {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.contact .cta-row .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px var(--shadow);
+}
