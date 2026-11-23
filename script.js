@@ -4,8 +4,8 @@
   "nav_about": "About me",
   "nav_contact": "Contact",
   "status": "Available for full-time roles and freelance projects",
-  "h1": "Web and mobile applications, from the database to the screen.",
-  "lead": "I'm a software developer. I build complete products: the interface, the server, the data and the deployment, and I like every piece to be clear for the people who use it and the people who maintain it.",
+  "h1": "Full Stack Developer: turning challenges into solutions that exceed expectations.",
+  "lead": "I'm a passionate Full Stack Developer who loves transforming ideas into real-world solutions. I thrive on challenges because I believe the greater the challenge, the greater the opportunity to learn, grow, and push my limits.<br><br>I put my heart into every project, paying attention to every detail and always striving to deliver my best work. Recently, I've independently managed entire software development projects, from the initial concept to deployment. At the same time, I value teamwork, collaboration, and sharing knowledge with others.<br><br>For me, every project is an opportunity to go the extra mile, strengthen my skills, and create something I'm truly proud of.",
   "btn_projects": "View projects",
   "btn_contact": "Contact me",
   "projects_title": "What I've built",
@@ -39,18 +39,19 @@
   "stack_title": "Tools I work with",
   "stack_data": "Data",
   "stack_int": "Integrations and deployment",
-  "about_title": "Understand the problem before writing code",
-  "about_p1": "I'm a software developer based in Bogotá. I've worked on a marketplace with a mobile app, its own server and payments, and on a data analysis tool for a client, along with several small projects I use to practice.",
-  "about_p2": "I like talking to the people who will use the product, splitting work into steps that can be tested, and getting things running in production. If you have an idea or a team looking for a developer, get in touch.",
+  "about_title": "Behind every line of code, there's passion, dedication, and the drive to go beyond limits. ✨",
+  "about_p1": "I'm a Full Stack Developer who enjoys turning ideas into real-world solutions. I'm passionate about building web and mobile applications, working across both frontend and backend, and embracing challenges that push me to keep learning.",
+  "about_p2": "In my most recent projects, I've independently managed different stages of development, from architecture and databases to user interfaces, integrations, and deployment. These experiences have strengthened my autonomy, problem-solving skills, and commitment to delivering quality results.",
+  "about_p3": "I also deeply value teamwork. I enjoy sharing knowledge, listening to different perspectives, and collaborating to find the best solutions. I believe great software shouldn't just work: it should be thoughtfully designed, carefully built, and reflect the dedication and passion of the people behind it.",
   "fact_role": "Role",
   "fact_loc": "Location",
   "fact_seek": "Looking for",
-  "fact_role_val": "Software developer",
+  "fact_role_val": "Full Stack Developer",
   "fact_seek_val": "Full-time roles and freelance projects",
   "contact_title": "Let's talk about your project",
   "contact_p": "Tell me what you need to build or what profile you're looking for. I reply by email and on LinkedIn.",
   "copy_btn": "Copy email",
-  "footer_role": "Software developer · Bogotá",
+  "footer_role": "Full Stack Developer · Bogotá",
   "globix_alt1": "Globix mobile app on a phone, with the Globix logo and shopping icons",
   "globix_alt2": "Globix web version showing recommendations and discounted products on the home screen",
   "c_alt": "Countries Project home screen with country cards, filters and pagination",
@@ -65,13 +66,13 @@
 
   var STORE_KEY = 'lang';
   var TITLE = {
-    es: 'Alejandra Blanco | Desarrolladora de software',
-    en: 'Alejandra Blanco | Software developer'
-  };
+  es: 'Alejandra Blanco | Full Stack Developer',
+  en: 'Alejandra Blanco | Full Stack Developer'
+};
   var DESC = {
-    es: 'Portafolio de Nury Alejandra Blanco, desarrolladora de software en Bogotá: proyectos, stack y contacto.',
-    en: 'Portfolio of Nury Alejandra Blanco, software developer in Bogotá: projects, stack and contact.'
-  };
+  es: 'Portafolio de Nury Alejandra Blanco, desarrolladora Full Stack en Bogotá. Desarrollo de aplicaciones web, móviles y soluciones de software.',
+  en: 'Portfolio of Nury Alejandra Blanco, a passionate Full Stack Developer based in Bogotá, Colombia. Building web and mobile applications, APIs, and innovative software solutions.'
+};
   var MSG = {
     es: { copied: 'Correo copiado', selected: 'Seleccionado, usa copiar en tu dispositivo' },
     en: { copied: 'Email copied', selected: 'Selected, use copy on your device' }

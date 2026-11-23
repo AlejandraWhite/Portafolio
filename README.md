@@ -42,6 +42,6 @@ El sitio está desplegado en Vercel y conectado a este repositorio, así que cad
 
 ## Contacto
 
-- Correo: Alejandranp2022@gmail.com
+- Correo: Alejandrabp2022@gmail.com
 - LinkedIn: [Nury Alejandra Blanco](https://www.linkedin.com/in/nury-alejandra-blanco-palomino-8428b0226)
 - GitHub: [AlejandraWhite](https://github.com/AlejandraWhite)
