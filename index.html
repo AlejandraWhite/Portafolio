@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alejandra Blanco | Desarrolladora de software</title>
+  <meta name="description" content="Portafolio de Nury Alejandra Blanco, desarrolladora de software en Bogotá: proyectos, stack y contacto.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230D1B24'/%3E%3Ctext x='32' y='41' font-family='monospace' font-size='26' text-anchor='middle' fill='%237FD6C4'%3EAB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#inicio"><span class="brand-mark">AB</span><span>Alejandra Blanco</span></a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#stack">Stack</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <div class="hero">
+      <div>
+        <span class="status">Disponible para empleo y proyectos freelance</span>
+        <p class="hero-name">Nury Alejandra Blanco · Bogotá, Colombia</p>
+        <h1>Aplicaciones web y móviles, de la base de datos a la pantalla.</h1>
+        <p class="hero-lead">Soy desarrolladora de software. Construyo productos completos: la interfaz, el servidor, los datos y el despliegue, y me gusta que cada pieza quede clara para quien la use y para quien la mantenga.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn" href="#contacto">Contactarme</a>
+        </div>
+      </div>
+
+      <div class="code-card" aria-label="Resumen en formato de código">
+        <div class="code-bar"><i></i><i></i><i></i><span>alejandra.js</span></div>
+<pre class="code-body"><span class="p">const</span> alejandra <span class="p">= {</span>
+  <span class="k">rol</span><span class="p">:</span> <span class="s">"Desarrolladora de software"</span><span class="p">,</span>
+  <span class="k">ciudad</span><span class="p">:</span> <span class="s">"Bogotá"</span><span class="p">,</span>
+  <span class="k">frontend</span><span class="p">: [</span><span class="s">"React"</span><span class="p">,</span> <span class="s">"React Native"</span><span class="p">,</span> <span class="s">"Expo"</span><span class="p">],</span>
+  <span class="k">backend</span><span class="p">: [</span><span class="s">"Python"</span><span class="p">,</span> <span class="s">"FastAPI"</span><span class="p">,</span> <span class="s">"Strapi"</span><span class="p">],</span>
+  <span class="k">datos</span><span class="p">: [</span><span class="s">"PostgreSQL"</span><span class="p">,</span> <span class="s">"SQLAlchemy"</span><span class="p">],</span>
+  <span class="k">busco</span><span class="p">: [</span><span class="s">"empleo"</span><span class="p">,</span> <span class="s">"freelance"</span><span class="p">],</span>
+<span class="p">};</span><span class="caret" aria-hidden="true"></span></pre>
+      </div>
+    </div>
+
+    <section id="proyectos">
+      <div class="sec-head">
+        <span class="mono-label">Proyectos</span>
+        <h2>Lo que he construido</h2>
+        <p>Dos productos reales y una colección de proyectos con los que sigo aprendiendo.</p>
+      </div>
+
+      <div class="projects">
+        <article class="card card-featured">
+          <span class="mono-label">App móvil y web</span>
+          <h3>Globix</h3>
+          <p>Marketplace donde las personas publican y encuentran productos y servicios en su país.</p>
+          <ul class="points">
+            <li>Inicio con feed y categorías por país, ordenadas de la más activa a la menos activa.</li>
+            <li>Suscripciones para vendedores con pago en Stripe y confirmación por webhook.</li>
+            <li>Medición de eventos con Google Analytics 4 y Google Tag Manager.</li>
+          </ul>
+          <div class="media-row">
+            <figure class="shot shot-promo">
+              <img src="img/globix-promo.webp" alt="Aplicación móvil de Globix en un teléfono, con el logo de Globix e íconos de compras" width="840" height="1050" loading="lazy">
+            </figure>
+            <figure class="shot shot-web">
+              <img src="img/globix-web.webp" alt="Versión web de Globix con recomendaciones y productos con descuento en la pantalla de inicio" width="1400" height="692" loading="lazy">
+              <figcaption>Versión web: inicio con recomendaciones y descuentos</figcaption>
+            </figure>
+          </div>
+          <!-- Cuando tengas la URL pública de Globix, descomenta y cambia el enlace:
+          <a class="card-link" href="https://TU-URL-DE-GLOBIX" target="_blank" rel="noopener noreferrer">Ver Globix en vivo →</a>
+          -->
+          <ul class="chips" aria-label="Tecnologías de Globix">
+            <li class="chip">React Native</li><li class="chip">Expo</li><li class="chip">Redux</li><li class="chip">Strapi</li><li class="chip">Stripe</li><li class="chip">GA4</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="mono-label">Proyecto para un cliente</span>
+          <h3>Analizador de loterías</h3>
+          <p>Aplicación que analiza 20 años de resultados históricos para mostrar frecuencias, atrasos y patrones.</p>
+          <ul class="points">
+            <li>Carga de resultados desde Excel y actualización automática con scrapers hechos en Playwright.</li>
+            <li>Análisis de terminaciones, permutaciones y un informe de aleatoriedad con pruebas estadísticas.</li>
+            <li>Despliegue en Vercel, Render y Supabase.</li>
+          </ul>
+          <ul class="chips" aria-label="Tecnologías del analizador de loterías">
+            <li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">SQLAlchemy</li><li class="chip">PostgreSQL</li><li class="chip">React</li><li class="chip">Vite</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="mono-label">Práctica y aprendizaje</span>
+          <h3>Proyectos pequeños</h3>
+          <p>Ejercicios y prototipos que hago para aprender tecnologías nuevas y afianzar lo que ya uso en el trabajo.</p>
+          <a class="card-link" href="https://github.com/AlejandraWhite" target="_blank" rel="noopener noreferrer">Ver el código en GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="sec-head">
+        <span class="mono-label">Stack</span>
+        <h2>Herramientas con las que trabajo</h2>
+      </div>
+      <div class="stack">
+        <div>
+          <h3>Frontend</h3>
+          <ul class="chips"><li class="chip">React</li><li class="chip">React Native</li><li class="chip">Expo</li><li class="chip">Redux</li><li class="chip">Vite</li></ul>
+        </div>
+        <div>
+          <h3>Backend</h3>
+          <ul class="chips"><li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">Strapi</li></ul>
+        </div>
+        <div>
+          <h3>Datos</h3>
+          <ul class="chips"><li class="chip">PostgreSQL</li><li class="chip">SQLAlchemy</li><li class="chip">Supabase</li></ul>
+        </div>
+        <div>
+          <h3>Integraciones y despliegue</h3>
+          <ul class="chips"><li class="chip">Stripe</li><li class="chip">Playwright</li><li class="chip">Google Analytics 4</li><li class="chip">Tag Manager</li><li class="chip">Vercel</li><li class="chip">Render</li><li class="chip">GitHub</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi">
+      <div class="about">
+        <div>
+          <div class="sec-head">
+            <span class="mono-label">Sobre mí</span>
+            <h2>Entender el problema antes de escribir código</h2>
+          </div>
+          <div class="about-text">
+            <p>Soy desarrolladora de software y vivo en Bogotá. He trabajado en un marketplace con aplicación móvil, servidor propio y pagos, y en una herramienta de análisis de datos para un cliente, además de varios proyectos pequeños con los que practico.</p>
+            <p>Me gusta hablar con quien va a usar el producto, dividir el trabajo en pasos que se puedan probar y dejar las cosas funcionando en producción. Si tienes una idea o un equipo que busca desarrolladora, escríbeme.</p>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt class="mono-label">Rol</dt><dd>Desarrolladora de software</dd></div>
+          <div><dt class="mono-label">Ubicación</dt><dd>Bogotá, Colombia</dd></div>
+          <div><dt class="mono-label">Busco</dt><dd>Empleo y proyectos freelance</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="contact">
+        <span class="mono-label">Contacto</span>
+        <h2>Hablemos de tu proyecto</h2>
+        <p>Cuéntame qué necesitas construir o qué perfil buscas. Respondo por correo y por LinkedIn.</p>
+        <div class="email-row">
+          <span class="email" id="email-text">Alejandranp2022@gmail.com</span>
+          <button class="btn btn-primary" id="copy-btn" type="button">Copiar correo</button>
+        </div>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        <div class="cta-row" style="margin-top:0">
+          <a class="btn" href="https://www.linkedin.com/in/nury-alejandra-blanco-palomino-8428b0226" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn" href="https://github.com/AlejandraWhite" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Nury Alejandra Blanco</span>
+    <span>Desarrolladora de software · Bogotá</span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
