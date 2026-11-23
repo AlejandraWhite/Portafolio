@@ -16,30 +16,34 @@
 <div class="wrap">
   <header class="top">
     <a class="brand" href="#inicio"><span class="brand-mark">AB</span><span>Alejandra Blanco</span></a>
-    <nav class="nav" aria-label="Secciones">
-      <a href="#proyectos">Proyectos</a>
+    <nav class="nav" aria-label="Secciones" data-i18n-aria="aria_nav">
+      <a href="#proyectos" data-i18n="nav_projects">Proyectos</a>
       <a href="#stack">Stack</a>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#sobre-mi" data-i18n="nav_about">Sobre mí</a>
+      <a href="#contacto" data-i18n="nav_contact">Contacto</a>
     </nav>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" class="lang-btn" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
   </header>
 
   <main id="inicio">
     <div class="hero">
       <div>
-        <span class="status">Disponible para empleo y proyectos freelance</span>
+        <span class="status" data-i18n="status">Disponible para empleo y proyectos freelance</span>
         <p class="hero-name">Nury Alejandra Blanco · Bogotá, Colombia</p>
-        <h1>Aplicaciones web y móviles, de la base de datos a la pantalla.</h1>
-        <p class="hero-lead">Soy desarrolladora de software. Construyo productos completos: la interfaz, el servidor, los datos y el despliegue, y me gusta que cada pieza quede clara para quien la use y para quien la mantenga.</p>
+        <h1 data-i18n="h1">Aplicaciones web y móviles, de la base de datos a la pantalla.</h1>
+        <p class="hero-lead" data-i18n="lead">Soy desarrolladora de software. Construyo productos completos: la interfaz, el servidor, los datos y el despliegue, y me gusta que cada pieza quede clara para quien la use y para quien la mantenga.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
-          <a class="btn" href="#contacto">Contactarme</a>
+          <a class="btn btn-primary" href="#proyectos" data-i18n="btn_projects">Ver proyectos</a>
+          <a class="btn" href="#contacto" data-i18n="btn_contact">Contactarme</a>
         </div>
       </div>
 
-      <div class="code-card" aria-label="Resumen en formato de código">
+      <div class="code-card" aria-label="Resumen en formato de código" data-i18n-aria="aria_code">
         <div class="code-bar"><i></i><i></i><i></i><span>alejandra.js</span></div>
-<pre class="code-body"><span class="p">const</span> alejandra <span class="p">= {</span>
+<pre class="code-body" data-i18n="code"><span class="p">const</span> alejandra <span class="p">= {</span>
   <span class="k">rol</span><span class="p">:</span> <span class="s">"Desarrolladora de software"</span><span class="p">,</span>
   <span class="k">ciudad</span><span class="p">:</span> <span class="s">"Bogotá"</span><span class="p">,</span>
   <span class="k">frontend</span><span class="p">: [</span><span class="s">"React"</span><span class="p">,</span> <span class="s">"React Native"</span><span class="p">,</span> <span class="s">"Expo"</span><span class="p">],</span>
@@ -52,59 +56,89 @@
 
     <section id="proyectos">
       <div class="sec-head">
-        <span class="mono-label">Proyectos</span>
-        <h2>Lo que he construido</h2>
-        <p>Dos productos reales y una colección de proyectos con los que sigo aprendiendo.</p>
+        <span class="mono-label" data-i18n="nav_projects">Proyectos</span>
+        <h2 data-i18n="projects_title">Lo que he construido</h2>
+        <p data-i18n="projects_sub">Dos productos reales y una colección de proyectos con los que sigo aprendiendo.</p>
       </div>
 
       <div class="projects">
         <article class="card card-featured">
-          <span class="mono-label">App móvil y web</span>
+          <span class="mono-label" data-i18n="globix_kind">App móvil y web</span>
           <h3>Globix</h3>
-          <p>Marketplace donde las personas publican y encuentran productos y servicios en su país.</p>
+          <p data-i18n="globix_desc">Marketplace donde las personas publican y encuentran productos y servicios en su país.</p>
           <ul class="points">
-            <li>Inicio con feed y categorías por país, ordenadas de la más activa a la menos activa.</li>
-            <li>Suscripciones para vendedores con pago en Stripe y confirmación por webhook.</li>
-            <li>Medición de eventos con Google Analytics 4 y Google Tag Manager.</li>
+            <li data-i18n="globix_li1">Inicio con feed y categorías por país, ordenadas de la más activa a la menos activa.</li>
+            <li data-i18n="globix_li2">Suscripciones para vendedores con pago en Stripe y confirmación por webhook.</li>
+            <li data-i18n="globix_li3">Medición de eventos con Google Analytics 4 y Google Tag Manager.</li>
           </ul>
           <div class="media-row">
             <figure class="shot shot-promo">
-              <img src="img/globix-promo.webp" alt="Aplicación móvil de Globix en un teléfono, con el logo de Globix e íconos de compras" width="840" height="1050" loading="lazy">
+              <img src="img/globix-promo.webp" alt="Aplicación móvil de Globix en un teléfono, con el logo de Globix e íconos de compras" data-i18n-alt="globix_alt1" width="840" height="1050" loading="lazy">
             </figure>
             <figure class="shot shot-web">
-              <img src="img/globix-web.webp" alt="Versión web de Globix con recomendaciones y productos con descuento en la pantalla de inicio" width="1400" height="692" loading="lazy">
-              <figcaption>Versión web: inicio con recomendaciones y descuentos</figcaption>
+              <img src="img/globix-web.webp" alt="Versión web de Globix con recomendaciones y productos con descuento en la pantalla de inicio" data-i18n-alt="globix_alt2" width="1400" height="692" loading="lazy">
+              <figcaption data-i18n="globix_cap">Versión web: inicio con recomendaciones y descuentos</figcaption>
             </figure>
           </div>
           <div style="display:flex;flex-wrap:wrap;gap:8px 28px">
-            <a class="card-link" href="https://www.globixapp.com" target="_blank" rel="noopener noreferrer">Ver Globix en vivo →</a>
-            <a class="card-link" href="https://play.google.com/store/apps/details?id=co.athenea.G_winkel&amp;hl=es_CO" target="_blank" rel="noopener noreferrer">Descargar en Google Play →</a>
+            <a class="card-link" href="https://www.globixapp.com" target="_blank" rel="noopener noreferrer" data-i18n="globix_link">Ver Globix en vivo →</a>
+            <a class="card-link" href="https://play.google.com/store/apps/details?id=co.athenea.G_winkel&amp;hl=es_CO" target="_blank" rel="noopener noreferrer" data-i18n="globix_play">Descargar en Google Play →</a>
           </div>
-          <ul class="chips" aria-label="Tecnologías de Globix">
+          <ul class="chips" aria-label="Tecnologías de Globix" data-i18n-aria="aria_globix">
             <li class="chip">React Native</li><li class="chip">Expo</li><li class="chip">Redux</li><li class="chip">Strapi</li><li class="chip">Stripe</li><li class="chip">GA4</li>
           </ul>
         </article>
 
-        <article class="card">
-          <span class="mono-label">Proyecto para un cliente</span>
-          <h3>Analizador de loterías</h3>
-          <p>Aplicación que analiza 20 años de resultados históricos para mostrar frecuencias, atrasos y patrones.</p>
-          <ul class="points">
-            <li>Carga de resultados desde Excel y actualización automática con scrapers hechos en Playwright.</li>
-            <li>Análisis de terminaciones, permutaciones y un informe de aleatoriedad con pruebas estadísticas.</li>
-            <li>Despliegue en Vercel, Render y Supabase.</li>
-          </ul>
-          <a class="card-link" href="https://lottery-analizer.vercel.app/" target="_blank" rel="noopener noreferrer">Ver proyecto en vivo →</a>
-          <ul class="chips" aria-label="Tecnologías del analizador de loterías">
-            <li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">SQLAlchemy</li><li class="chip">PostgreSQL</li><li class="chip">React</li><li class="chip">Vite</li>
-          </ul>
+        <article class="card card-featured card-split">
+          <div class="split-col">
+            <span class="mono-label" data-i18n="an_kind">Proyecto para un cliente</span>
+            <h3 data-i18n="an_title">Analizador de loterías</h3>
+            <p data-i18n="an_desc">Aplicación hecha en Python que toma una base de datos con los números que han caído en las principales loterías de Colombia durante los últimos 20 años. Los organiza con varios criterios, como la frecuencia, el atraso frente al promedio de cada número y otros factores, para explorar su comportamiento histórico.</p>
+            <a class="card-link" href="https://lottery-analizer.vercel.app/" target="_blank" rel="noopener noreferrer" data-i18n="an_link">Ver proyecto en vivo →</a>
+          </div>
+          <div class="split-col">
+            <ul class="points">
+              <li data-i18n="an_li1">Ordena los números por frecuencia, por atraso respecto a su propio promedio y por otros criterios estadísticos.</li>
+              <li data-i18n="an_li2">Carga de resultados desde Excel y actualización automática con scrapers hechos en Playwright.</li>
+              <li data-i18n="an_li3">Análisis de terminaciones y permutaciones, y un informe de aleatoriedad con pruebas estadísticas.</li>
+              <li data-i18n="an_li4">Despliegue en Vercel, Render y Supabase.</li>
+            </ul>
+            <ul class="chips" aria-label="Tecnologías del analizador de loterías" data-i18n-aria="aria_an">
+              <li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">SQLAlchemy</li><li class="chip">PostgreSQL</li><li class="chip">React</li><li class="chip">Vite</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="card">
-          <span class="mono-label">Práctica y aprendizaje</span>
-          <h3>Proyectos pequeños</h3>
-          <p>Ejercicios y prototipos que hago para aprender tecnologías nuevas y afianzar lo que ya uso en el trabajo.</p>
-          <a class="card-link" href="https://github.com/AlejandraWhite" target="_blank" rel="noopener noreferrer">Ver el código en GitHub →</a>
+        <article class="card card-featured">
+          <span class="mono-label" data-i18n="sm_kind">Práctica y aprendizaje</span>
+          <h3 data-i18n="sm_title">Proyectos pequeños</h3>
+          <p data-i18n="sm_desc">Ejercicios y prototipos que hago para aprender tecnologías nuevas y afianzar lo que ya uso en el trabajo.</p>
+          <div class="mini-grid">
+            <div class="mini">
+              <img src="img/countries.webp" alt="Pantalla principal de Countries Project con tarjetas de países, filtros y paginación" data-i18n-alt="c_alt" width="1100" height="653" loading="lazy">
+              <div class="mini-body">
+                <h4>Countries Project</h4>
+                <p data-i18n="c_desc">Explora 195 países con búsqueda, filtros por actividad, orden alfabético o por población y paginación.</p>
+                <p class="mini-note" data-i18n="c_note">El servidor gratuito de este proyecto ya no está activo, así que la demo no carga datos.</p>
+                <a class="card-link" href="https://p-i-countries-main.vercel.app/Home" target="_blank" rel="noopener noreferrer" data-i18n="c_link">Ver la interfaz →</a>
+              </div>
+            </div>
+            <div class="mini">
+              <img src="img/ejercicios-tienda.webp" alt="Sitio web con un carrusel de ejercicios y una tienda de suplementos" data-i18n-alt="e_alt" width="1100" height="619" loading="lazy">
+              <div class="mini-body">
+                <h4 data-i18n="e_title">Ejercicios y tienda</h4>
+                <p data-i18n="e_desc">Sitio con un carrusel de ejercicios y una tienda de suplementos.</p>
+              </div>
+            </div>
+            <div class="mini">
+              <img class="img-right" src="img/henry-food.png" alt="Encabezado del proyecto individual Henry Food con la ilustración de un cocinero" data-i18n-alt="h_alt" width="853" height="382" loading="lazy">
+              <div class="mini-body">
+                <h4>Henry Food</h4>
+                <p data-i18n="h_desc">Proyecto individual Henry Food.</p>
+              </div>
+            </div>
+          </div>
+          <a class="card-link" href="https://github.com/AlejandraWhite" target="_blank" rel="noopener noreferrer" data-i18n="sm_github">Ver más en GitHub →</a>
         </article>
       </div>
     </section>
@@ -112,7 +146,7 @@
     <section id="stack">
       <div class="sec-head">
         <span class="mono-label">Stack</span>
-        <h2>Herramientas con las que trabajo</h2>
+        <h2 data-i18n="stack_title">Herramientas con las que trabajo</h2>
       </div>
       <div class="stack">
         <div>
@@ -124,11 +158,11 @@
           <ul class="chips"><li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">Strapi</li></ul>
         </div>
         <div>
-          <h3>Datos</h3>
+          <h3 data-i18n="stack_data">Datos</h3>
           <ul class="chips"><li class="chip">PostgreSQL</li><li class="chip">SQLAlchemy</li><li class="chip">Supabase</li></ul>
         </div>
         <div>
-          <h3>Integraciones y despliegue</h3>
+          <h3 data-i18n="stack_int">Integraciones y despliegue</h3>
           <ul class="chips"><li class="chip">Stripe</li><li class="chip">Playwright</li><li class="chip">Google Analytics 4</li><li class="chip">Tag Manager</li><li class="chip">Vercel</li><li class="chip">Render</li><li class="chip">GitHub</li></ul>
         </div>
       </div>
@@ -138,30 +172,30 @@
       <div class="about">
         <div>
           <div class="sec-head">
-            <span class="mono-label">Sobre mí</span>
-            <h2>Entender el problema antes de escribir código</h2>
+            <span class="mono-label" data-i18n="nav_about">Sobre mí</span>
+            <h2 data-i18n="about_title">Entender el problema antes de escribir código</h2>
           </div>
           <div class="about-text">
-            <p>Soy desarrolladora de software y vivo en Bogotá. He trabajado en un marketplace con aplicación móvil, servidor propio y pagos, y en una herramienta de análisis de datos para un cliente, además de varios proyectos pequeños con los que practico.</p>
-            <p>Me gusta hablar con quien va a usar el producto, dividir el trabajo en pasos que se puedan probar y dejar las cosas funcionando en producción. Si tienes una idea o un equipo que busca desarrolladora, escríbeme.</p>
+            <p data-i18n="about_p1">Soy desarrolladora de software y vivo en Bogotá. He trabajado en un marketplace con aplicación móvil, servidor propio y pagos, y en una herramienta de análisis de datos para un cliente, además de varios proyectos pequeños con los que practico.</p>
+            <p data-i18n="about_p2">Me gusta hablar con quien va a usar el producto, dividir el trabajo en pasos que se puedan probar y dejar las cosas funcionando en producción. Si tienes una idea o un equipo que busca desarrolladora, escríbeme.</p>
           </div>
         </div>
         <dl class="facts">
-          <div><dt class="mono-label">Rol</dt><dd>Desarrolladora de software</dd></div>
-          <div><dt class="mono-label">Ubicación</dt><dd>Bogotá, Colombia</dd></div>
-          <div><dt class="mono-label">Busco</dt><dd>Empleo y proyectos freelance</dd></div>
+          <div><dt class="mono-label" data-i18n="fact_role">Rol</dt><dd data-i18n="fact_role_val">Desarrolladora de software</dd></div>
+          <div><dt class="mono-label" data-i18n="fact_loc">Ubicación</dt><dd>Bogotá, Colombia</dd></div>
+          <div><dt class="mono-label" data-i18n="fact_seek">Busco</dt><dd data-i18n="fact_seek_val">Empleo y proyectos freelance</dd></div>
         </dl>
       </div>
     </section>
 
     <section id="contacto">
       <div class="contact">
-        <span class="mono-label">Contacto</span>
-        <h2>Hablemos de tu proyecto</h2>
-        <p>Cuéntame qué necesitas construir o qué perfil buscas. Respondo por correo y por LinkedIn.</p>
+        <span class="mono-label" data-i18n="nav_contact">Contacto</span>
+        <h2 data-i18n="contact_title">Hablemos de tu proyecto</h2>
+        <p data-i18n="contact_p">Cuéntame qué necesitas construir o qué perfil buscas. Respondo por correo y por LinkedIn.</p>
         <div class="email-row">
           <span class="email" id="email-text">Alejandranp2022@gmail.com</span>
-          <button class="btn btn-primary" id="copy-btn" type="button">Copiar correo</button>
+          <button class="btn btn-primary" id="copy-btn" type="button" data-i18n="copy_btn">Copiar correo</button>
         </div>
         <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
         <div class="cta-row" style="margin-top:0">
@@ -174,7 +208,7 @@
 
   <footer>
     <span>© 2026 Nury Alejandra Blanco</span>
-    <span>Desarrolladora de software · Bogotá</span>
+    <span data-i18n="footer_role">Desarrolladora de software · Bogotá</span>
   </footer>
 </div>
 

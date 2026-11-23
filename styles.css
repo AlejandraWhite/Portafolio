@@ -1,64 +1,125 @@
 /* Layout: cabecera simple, hero a dos columnas (texto + tarjeta de código con datos reales),
-     proyectos en rejilla, stack agrupado, bloque final de contacto. */
-  :root {
-    --bg: #F3F6F7;
-    --surface: #FFFFFF;
-    --ink: #0D1B24;
-    --muted: #56656F;
-    --line: #D9E1E5;
-    --accent: #087A68;
-    --accent-ink: #FFFFFF;
-    --accent-soft: #DDF3EE;
-    --code-bg: #0D1B24;
-    --code-ink: #DCE8EC;
-    --code-key: #7FD6C4;
-    --code-str: #F2C98A;
-    --code-punct: #7C909A;
-    --code-line: #1F313D;
-    color-scheme: light;
+   proyectos en rejilla, stack agrupado, bloque final de contacto.
+   Paleta: rosa orquídea y lila sobre fondos blush, con tarjeta de código en ciruela. */
 
-    --font-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
-    --font-body: 'Instrument Sans', 'Segoe UI', system-ui, sans-serif;
-    --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0A1317;
-      --surface: #111D23;
-      --ink: #E7EEF1;
-      --muted: #93A4AD;
-      --line: #21313A;
-      --accent: #3FD2B4;
-      --accent-ink: #04201A;
-      --accent-soft: #12332F;
-      --code-bg: #07100F;
-      --code-ink: #DCE8EC;
-      --code-key: #7FD6C4;
-      --code-str: #F2C98A;
-      --code-punct: #7C909A;
-      --code-line: #1B2B33;
-      color-scheme: dark;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #0A1317;
-    --surface: #111D23;
-    --ink: #E7EEF1;
-    --muted: #93A4AD;
-    --line: #21313A;
-    --accent: #3FD2B4;
-    --accent-ink: #04201A;
-    --accent-soft: #12332F;
-    --code-bg: #07100F;
-    --code-ink: #DCE8EC;
-    --code-key: #7FD6C4;
-    --code-str: #F2C98A;
-    --code-punct: #7C909A;
-    --code-line: #1B2B33;
-    color-scheme: dark;
-  }
+/* Princess Dream Tech — vibrant pastel palette */
+:root {
+  --bg: #FCF8FF;
+  --surface: #FFFFFF;
+  --ink: #38264F;
+  --muted: #705D82;
+  --line: #DFC6F8;
+  --accent: #8B45D6;
+  --accent-2: #278FC3;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #EEDBFF;
+  --glow-1: #FFBCE1;
+  --glow-2: #B8E9FF;
+  --shadow: rgba(135, 67, 202, 0.27);
+  --code-bg: #2D2042;
+  --code-ink: #FFF4FF;
+  --code-key: #FF9DDB;
+  --code-str: #9BECD5;
+  --code-punct: #D2B5FF;
+  --code-line: #503A6B;
+  color-scheme: light;
+  --font-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Instrument Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monos;
+}
 
-  * { box-sizing: border-box; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --bg: #241832;
+  --surface: #352342;
+  --ink: #FFF5FF;
+  --muted: #DAC5E6;
+  --line: #674C7F;
+  --accent: #D19AFF;
+  --accent-2: #83D8F5;
+  --accent-ink: #24132F;
+  --accent-soft: #533568;
+  --glow-1: #71365F;
+  --glow-2: #295A79;
+  --shadow: rgba(0, 0, 0, 0.42);
+  --code-bg: #191125;
+  --code-ink: #FFF4FF;
+  --code-key: #FF9DDB;
+  --code-str: #9BECD5;
+  --code-punct: #D2B5FF;
+  --code-line: #463356;
+  color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #241832;
+  --surface: #352342;
+  --ink: #FFF5FF;
+  --muted: #DAC5E6;
+  --line: #674C7F;
+  --accent: #D19AFF;
+  --accent-2: #83D8F5;
+  --accent-ink: #24132F;
+  --accent-soft: #533568;
+  --glow-1: #71365F;
+  --glow-2: #295A79;
+  --shadow: rgba(0, 0, 0, 0.42);
+  --code-bg: #191125;
+  --code-ink: #FFF4FF;
+  --code-key: #FF9DDB;
+  --code-str: #9BECD5;
+  --code-punct: #D2B5FF;
+  --code-line: #463356;
+  color-scheme: dark;
+}
+
+/* Soft princess gradient */
+.hero {
+  background: linear-gradient(
+    120deg,
+    #EDE5FC 0%,
+    #E6F5FC 52%,
+    #FBEAF2 100%
+  );
+  border-radius: 28px;
+}
+
+/* Elegant buttons */
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    #8365B8,
+    #6D94C4
+  );
+  color: #FFFFFF;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px var(--shadow);
+  transition: transform .25s ease,
+              box-shadow .25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px var(--shadow);
+}
+
+/* Pastel project cards */
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 0 8px 28px var(--shadow);
+  transition: transform .25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+
+* { box-sizing: border-box; }
   body {
     margin: 0;
     background: var(--bg);
@@ -214,4 +275,120 @@
   .media-row { grid-template-columns: minmax(0, 1fr); }
   .shot-promo { max-width: 360px; }
   .shot img { height: auto; }
+}
+
+/* Tarjetas en dos columnas (analizador) */
+.card-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 16px 40px; }
+.split-col { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+
+/* Mini-tarjetas de proyectos pequeños */
+.mini-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; }
+.mini { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); }
+.mini img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; background: var(--code-bg); }
+.mini img.img-right { object-position: right center; }
+.mini-body { display: flex; flex: 1; flex-direction: column; gap: 8px; padding: 14px 16px 16px; }
+.mini-body h4 { margin: 0; font-family: var(--font-display); font-size: 1.1rem; letter-spacing: -0.01em; }
+.mini-body p { color: var(--muted); font-size: 0.92rem; }
+.mini-body .mini-note { font-size: 0.84rem; }
+.mini-body .card-link { margin-top: auto; padding-top: 4px; }
+@media (max-width: 860px) {
+  .card-split { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Selector de idioma */
+.lang { display: inline-flex; padding: 3px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+.lang-btn {
+  padding: 5px 12px; border: 0; border-radius: 999px; background: transparent; color: var(--muted);
+  font-family: var(--font-mono); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.06em; cursor: pointer;
+}
+.lang-btn[aria-pressed="false"]:hover { color: var(--ink); }
+.lang-btn[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+
+/* Acabado suave: bordes redondeados, degradados y sombras rosadas */
+body {
+  background-image:
+    radial-gradient(48rem 26rem at 92% -4rem, var(--glow-1), transparent 70%),
+    radial-gradient(40rem 24rem at -6rem 14rem, var(--glow-2), transparent 70%);
+  background-repeat: no-repeat;
+}
+.brand-mark { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--accent-ink); border-radius: 14px; }
+.btn { border-radius: 999px; padding-inline: 24px; }
+.btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); border-color: transparent; color: var(--accent-ink); }
+.btn-primary:hover { border-color: transparent; filter: brightness(1.07); }
+.card, .facts { border-radius: 22px; box-shadow: 0 14px 34px -22px var(--shadow); }
+.contact { border-radius: 28px; box-shadow: 0 18px 44px -26px var(--shadow); }
+.code-card { border-radius: 22px; box-shadow: 0 22px 50px -28px var(--shadow); }
+.chip { padding: 4px 12px; border-radius: 999px; border-color: transparent; background: var(--accent-soft); color: var(--ink); }
+.mini, .shot { border-radius: 16px; }
+.email { border-radius: 14px; }
+.lang-btn[aria-pressed="true"] { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--accent-ink); }
+/* =============================================================
+   PRINCESS DREAM TECH — FINAL VISUAL FINISH
+   Placed last so these styles win over earlier component rules.
+   ============================================================= */
+body {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 48rem 32rem at 95% 0%, var(--glow-1), transparent 72%),
+    radial-gradient(ellipse 45rem 30rem at 0% 28rem, var(--glow-2), transparent 73%);
+}
+.hero {
+  background: linear-gradient(115deg, #EBD2FF 0%, #D6F0FF 50%, #FFE0F0 100%);
+  border: 1px solid #E3C5F7;
+  border-radius: 30px;
+  padding-inline: clamp(20px, 4vw, 48px);
+  box-shadow: 0 18px 48px -35px var(--shadow);
+}
+.hero h1 { color: var(--ink); }
+.hero-name, .card-link { color: var(--accent); }
+.btn-primary {
+  background: linear-gradient(120deg, #8541CF, #A950CF 52%, #318FC7);
+  border-color: transparent;
+  color: #FFFFFF;
+  box-shadow: 0 10px 24px rgba(128, 65, 203, 0.25);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+.btn-primary:hover {
+  border-color: transparent;
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 15px 32px rgba(128, 65, 203, 0.34);
+}
+.card, .facts, .contact {
+  border-color: var(--line);
+  box-shadow: 0 14px 38px -24px var(--shadow);
+}
+.card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 20px 42px -20px var(--shadow);
+}
+.chip { background: var(--accent-soft); color: var(--ink); }
+.status { background: var(--accent-soft); color: #7433BA; }
+.code-card { box-shadow: 0 22px 50px -26px var(--shadow); }
+.brand-mark { background: linear-gradient(135deg, #8B45D6, #4EACE1); }
+.lang-btn[aria-pressed="true"] {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: var(--accent-ink);
+}
+/* Keep dark mode vivid, without light-only hero colors. */
+:root[data-theme="dark"] .hero {
+  background: linear-gradient(120deg, #4E3067, #2C536A 55%, #653A64);
+  border-color: #78528D;
+}
+:root[data-theme="dark"] .status { color: #F0D9FF; }
+:root[data-theme="dark"] .btn-primary { color: #FFFFFF; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .hero {
+    background: linear-gradient(120deg, #4E3067, #2C536A 55%, #653A64);
+    border-color: #78528D;
+  }
+  :root:not([data-theme="light"]) .status { color: #F0D9FF; }
+  :root:not([data-theme="light"]) .btn-primary { color: #FFFFFF; }
+}
+@media (max-width: 860px) {
+  .hero { padding-inline: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary { transition: none; }
+  .btn-primary:hover { transform: none; }
 }
