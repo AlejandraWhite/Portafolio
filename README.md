@@ -2,7 +2,7 @@
 
 Mi portafolio personal como desarrolladora de software. Reúne los principales proyectos en los que he trabajado, las tecnologías que uso y la forma de contactarme.
 
-**Sitio en vivo:** https://TU-URL.vercel.app
+**Sitio en vivo:** https://portafolio-psi-tan.vercel.app/#inicio
 
 ## Qué encontrarás
 
