@@ -1,57 +1,47 @@
-# Portafolio de Alejandra Blanco
+# Portafolio
 
-Sitio estático en HTML, CSS y JavaScript. No necesita instalar nada para verlo ni para publicarlo.
+Mi portafolio personal como desarrolladora de software. Reúne los principales proyectos en los que he trabajado, las tecnologías que uso y la forma de contactarme.
+
+**Sitio en vivo:** https://TU-URL.vercel.app
+
+## Qué encontrarás
+
+- Una presentación con mi perfil y lo que estoy buscando: empleo y proyectos freelance.
+- Mis proyectos: Globix (marketplace con app móvil y versión web), un analizador de resultados históricos hecho para un cliente y una colección de proyectos pequeños con los que practico.
+- El stack con el que trabajo, agrupado en frontend, backend, datos e integraciones.
+- Una sección sobre mí y los datos de contacto, con un botón para copiar el correo.
+
+## Tecnologías
+
+HTML, CSS y JavaScript. Es un sitio estático, así que no usa frameworks, librerías ni paso de compilación. Las tipografías vienen de Google Fonts (Bricolage Grotesque, Instrument Sans y JetBrains Mono).
+
+## Detalles de diseño
+
+- **Tema claro y oscuro.** Los colores están definidos como variables CSS y cambian según la preferencia del sistema del visitante.
+- **Responsive.** El diseño usa CSS Grid y Flexbox y se adapta desde pantallas de celular hasta monitores grandes.
+- **Imágenes en WebP,** para que la página cargue rápido.
+- **Accesibilidad básica.** Textos alternativos en las imágenes, foco visible al navegar con teclado y animaciones desactivadas para quien prefiere menos movimiento.
 
 ## Estructura
 
 ```
 portafolio/
 ├── index.html   contenido de la página
-├── styles.css   colores, tipografías y diseño (tema claro y oscuro)
+├── styles.css   estilos, variables de color y temas
 ├── script.js    botón de copiar correo
-└── README.md
+└── img/         capturas de Globix
 ```
 
-## Verlo en VS Code
+## Probarlo en local
 
-1. Abre la carpeta `portafolio` en VS Code (Archivo > Abrir carpeta).
-2. Instala la extensión **Live Server** (de Ritwick Dey).
-3. Clic derecho en `index.html` > **Open with Live Server**. La página se recarga sola cuando guardas cambios.
+Clona el repositorio y abre `index.html` en el navegador. Si usas VS Code, la extensión Live Server recarga la página cada vez que guardas.
 
-## Qué editar
+## Despliegue
 
-- **Textos y proyectos:** `index.html`. Cada proyecto es un bloque `<article class="card">`; copia uno para añadir otro.
-- **Colores:** bloque `:root` al inicio de `styles.css`. Hay una paleta clara y otra oscura.
-- **Contacto:** sección `id="contacto"` en `index.html`.
+El sitio está desplegado en Vercel y conectado a este repositorio, así que cada cambio que subo a `main` se publica solo.
 
-## Publicarlo (elige una opción)
+## Contacto
 
-### Opción A: Vercel (recomendada)
-
-1. Sube la carpeta a un repositorio nuevo en GitHub:
-   ```bash
-   git init
-   git add .
-   git commit -m "Portafolio inicial"
-   git branch -M main
-   git remote add origin https://github.com/AlejandraWhite/portafolio.git
-   git push -u origin main
-   ```
-2. Entra a [vercel.com/new](https://vercel.com/new), importa el repositorio y pulsa **Deploy**. No cambies ninguna configuración: es un sitio estático.
-3. Cada `git push` a `main` publica los cambios automáticamente.
-
-### Opción B: GitHub Pages
-
-1. Sube el repositorio como en la opción A.
-2. En GitHub: **Settings > Pages > Build and deployment**, elige *Deploy from a branch*, rama `main`, carpeta `/ (root)`.
-3. Tu sitio queda en `https://alejandrawhite.github.io/portafolio/`.
-
-## Dominio propio
-
-Un dominio como `alejandrablanco.dev` o `alejandrablanco.com` se ve más profesional que la dirección gratuita. En Vercel: **Settings > Domains > Add**, y sigue las instrucciones para apuntar el dominio. Los dominios se compran aparte (por ejemplo en Namecheap, Porkbun o Cloudflare).
-
-## Antes de publicar
-
-- Revisa que las descripciones de los proyectos sean correctas.
-- Las imágenes de Globix están en la carpeta `img/` (formato WebP, ya optimizadas). Para añadir capturas de otros proyectos, guárdalas ahí y enlázalas con `<img src="img/archivo.webp" alt="descripción">`.
-- Cuando tengas la URL pública de Globix, descomenta el enlace "Ver Globix en vivo" en la tarjeta de Globix de `index.html` y cambia la dirección.
+- Correo: Alejandranp2022@gmail.com
+- LinkedIn: [Nury Alejandra Blanco](https://www.linkedin.com/in/nury-alejandra-blanco-palomino-8428b0226)
+- GitHub: [AlejandraWhite](https://github.com/AlejandraWhite)
