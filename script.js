@@ -180,7 +180,7 @@ if (document.readyState === "loading") {
   "an_li4": "Deployed on Vercel, Render and Supabase.",
   "sm_kind": "Practice and learning",
   "sm_title": "Small projects",
-  "sm_desc": "Academic projects developed during my software engineering studies, applying programming concepts, technical skills, and problem-solving to real-world scenarios.",
+  "sm_desc": "A selection of projects developed during my professional training in software development, demonstrating my ability to apply technical knowledge, solve complex problems, and transform ideas into functional solutions through different technologies and development methodologies.",
   "c_desc": "Browse 195 countries with search, activity filters, alphabetical or population sorting, and pagination.",
   "c_note": "This project's free server is no longer running, so the demo doesn't load data.",
   "c_link": "View the interface →",
