@@ -427,3 +427,83 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 8px 22px var(--shadow);
 }
+
+/* ==============================
+   LISTAS EXPANDIBLES
+================================= */
+
+.expandable-list > li[hidden] {
+  display: none !important;
+}
+
+.expand-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-top: 12px;
+  margin-bottom: 16px;
+  padding: 9px 18px;
+
+  border: 1px solid #a78bfa;
+  border-radius: 25px;
+
+  background: rgba(167, 139, 250, 0.08);
+  color: inherit;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.expand-toggle:hover {
+  background: rgba(167, 139, 250, 0.18);
+  border-color: #8b5cf6;
+  transform: translateY(-2px);
+}
+
+.expand-toggle:focus-visible {
+  outline: 2px solid #8b5cf6;
+  outline-offset: 4px;
+}
+
+.expand-toggle .expand-icon {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.3s ease;
+}
+
+.expand-toggle[aria-expanded="true"] .expand-icon {
+  transform: rotate(180deg);
+}
+
+.expandable-list.is-expanded > li.is-extra {
+  animation: expandFadeIn 0.35s ease both;
+}
+
+@keyframes expandFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .expandable-list.is-expanded > li.is-extra {
+    animation: none;
+  }
+
+  .expand-toggle,
+  .expand-toggle .expand-icon {
+    transition: none;
+  }
+}

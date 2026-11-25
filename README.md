@@ -7,7 +7,7 @@ Mi portafolio personal como desarrolladora de software. Reúne los principales p
 ## Qué encontrarás
 
 - Una presentación con mi perfil y lo que estoy buscando: empleo y proyectos freelance.
-- Mis proyectos: Globix (marketplace con app móvil y versión web), un analizador de resultados históricos hecho para un cliente y una colección de proyectos pequeños con los que practico.
+- Mis proyectos destacados: Globix (marketplace con app móvil y versión web), un analizador de resultados históricos hecho para un cliente y una colección de proyectos pequeños con los que practico.
 - El stack con el que trabajo, agrupado en frontend, backend, datos e integraciones.
 - Una sección sobre mí y los datos de contacto, con un botón para copiar el correo.
 

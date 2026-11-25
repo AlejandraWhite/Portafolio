@@ -1,3 +1,122 @@
+
+/* ==============================
+   LISTAS EXPANDIBLES
+================================= */
+
+function initExpandableLists() {
+  document.querySelectorAll(".expandable-list").forEach((list, index) => {
+
+    // Evitar inicializaciones duplicadas
+    if (list.dataset.initialized === "true") return;
+
+    const items = Array.from(list.children).filter(
+      item => item.tagName === "LI"
+    );
+
+    const visibleCount = Math.max(
+      1,
+      parseInt(list.dataset.visible, 10) || 3
+    );
+
+    // No crear botón si todos los elementos son visibles
+    if (items.length <= visibleCount) return;
+
+    list.dataset.initialized = "true";
+
+    const extraItems = items.slice(visibleCount);
+
+    let expanded = false;
+
+    // Identificador para accesibilidad
+    if (!list.id) {
+      list.id = `expandable-list-${index}`;
+    }
+
+    // Ocultar los elementos adicionales
+    extraItems.forEach(item => {
+      item.hidden = true;
+      item.classList.add("is-extra");
+    });
+
+    // Crear botón
+    const button = document.createElement("button");
+
+    button.type = "button";
+    button.className = "expand-toggle";
+
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-controls", list.id);
+
+    button.innerHTML = `
+      <span class="expand-text" data-i18n="show_more">
+        Ver más
+      </span>
+
+      <svg class="expand-icon"
+           viewBox="0 0 24 24"
+           fill="none"
+           stroke="currentColor"
+           stroke-width="2"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           aria-hidden="true">
+
+        <path d="m6 9 6 6 6-6"></path>
+
+      </svg>
+    `;
+
+    const buttonText = button.querySelector(".expand-text");
+
+    function updateButtonText() {
+      const isEnglish = document.documentElement.lang
+        .toLowerCase()
+        .startsWith("en");
+
+      buttonText.dataset.i18n = expanded
+        ? "show_less"
+        : "show_more";
+
+      buttonText.textContent = expanded
+        ? (isEnglish ? "Show less" : "Ver menos")
+        : (isEnglish ? "Show more" : "Ver más");
+    }
+
+    button.addEventListener("click", () => {
+
+      expanded = !expanded;
+
+      extraItems.forEach(item => {
+        item.hidden = !expanded;
+      });
+
+      list.classList.toggle("is-expanded", expanded);
+
+      button.setAttribute(
+        "aria-expanded",
+        String(expanded)
+      );
+
+      updateButtonText();
+    });
+
+    // Insertar el botón después de la lista
+    list.insertAdjacentElement("afterend", button);
+
+    updateButtonText();
+  });
+}
+
+// Inicializar cuando el documento esté disponible
+if (document.readyState === "loading") {
+  document.addEventListener(
+    "DOMContentLoaded",
+    initExpandableLists
+  );
+} else {
+  initExpandableLists();
+}
+
 (function () {
   var EN = {
   "nav_projects": "Projects",
@@ -9,12 +128,45 @@
   "btn_projects": "View projects",
   "btn_contact": "Contact me",
   "projects_title": "What I've built",
-  "projects_sub": "Two real products and a collection of projects I keep learning with.",
-  "globix_kind": "Mobile and web app",
+  "projects_sub": "Here a selection of the most representative projects from my career as a software developer. Each one reflects my passion for technology, my commitment to quality, and my ability to turn ideas into real-world solutions. Beyond writing code, my purpose is to build products that deliver meaningful value, exceed expectations, and create lasting satisfaction for those who place their trust in my work.",  "globix_kind": "Mobile and web app",
   "globix_desc": "Marketplace where people publish and find products and services in their country.",
-  "globix_li1": "Home feed and categories by country, ordered from most to least active.",
-  "globix_li2": "Seller subscriptions with Stripe payments and webhook confirmation.",
-  "globix_li3": "Event tracking with Google Analytics 4 and Google Tag Manager.",
+  "globix_li1": "Development of a cross-platform marketplace featuring mobile and web applications, integrating e-commerce and social networking functionalities.",
+
+"globix_li2": "Dynamic feed and country-specific category system organized according to activity levels.",
+
+"globix_li3": "Integration of multiple payment methods, including Stripe, PayPal, Mercado Pago, Sistecrédito, and cash on delivery.",
+
+"globix_li4": "Automated order creation for online transactions and cash-on-delivery purchases.",
+
+"globix_li5": "Skydropx integration for logistics and product shipping management.",
+
+"globix_li6": "Seller subscription system with recurring Stripe payments and automated webhook-based confirmation.",
+
+"globix_li7": "AWS cloud infrastructure using Elastic Beanstalk, Amazon S3, and CloudFront.",
+
+"globix_li8": "Backend containerization with Docker to streamline deployment, maintenance, and portability.",
+
+"globix_li9": "Design and development of custom REST APIs to enable communication between applications, external services, and databases.",
+
+"globix_li10": "Design, administration, and optimization of relational databases using PostgreSQL.",
+
+"globix_li11": "Management of users, sellers, products, services, shopping carts, addresses, and orders.",
+
+"globix_li12": "Implementation of social networking features, including multimedia posts, videos, comments, and reactions.",
+
+"globix_li13": "International platform architecture supporting multiple languages, currencies, and country-specific content personalization.",
+
+"globix_li14": "Integration of geolocation and geocoding services using Google Maps.",
+
+"globix_li15": "Implementation of push notifications to enable communication with mobile application users.",
+
+"globix_li16": "Advanced integration of Google Analytics 4, Google Tag Manager, Meta Pixel, and TikTok Pixel for event and conversion tracking.",
+
+"globix_li17": "Automated XML product feed generation and Google Merchant Center integration.",
+
+"globix_li18": "Production deployment and maintenance, troubleshooting, and continuous performance optimization.",
+
+"globix_li19": "End-to-end software development lifecycle management, from requirements analysis and architecture design to implementation and production deployment.",
   "globix_cap": "Web version: home with recommendations and discounts",
   "globix_link": "View Globix live →",
   "globix_play": "Get it on Google Play →",
@@ -56,6 +208,8 @@
 "copy_btn": "Copy email",
 
 "send_email": "✉️ Send email",
+"show_more": "Show more",
+"show_less": "Show less",
 
   "footer_role": "Full Stack Developer · Bogotá",
   "globix_alt1": "Globix mobile app on a phone, with the Globix logo and shopping icons",

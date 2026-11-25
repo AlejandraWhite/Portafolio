@@ -117,18 +117,50 @@
       <div class="sec-head">
         <span class="mono-label" data-i18n="nav_projects">Proyectos</span>
         <h2 data-i18n="projects_title">Lo que he construido</h2>
-        <p data-i18n="projects_sub">Dos productos reales y una colección de proyectos con los que sigo aprendiendo.</p>
-      </div>
-
+      <p data-i18n="projects_sub">Aqui una selección de los proyectos más representativos de mi trayectoria como desarrolladora de software. Cada uno refleja mi pasión por la tecnología, mi compromiso con la calidad y mi capacidad para transformar ideas en soluciones reales. Más allá de escribir código, mi propósito es crear productos que aporten valor, superen expectativas y generen satisfacción en quienes confían en mi trabajo.</p>      </div>
       <div class="projects">
         <article class="card card-featured">
           <span class="mono-label" data-i18n="globix_kind">App móvil y web</span>
           <h3>Globix</h3>
           <p data-i18n="globix_desc">Marketplace donde las personas publican y encuentran productos y servicios en su país.</p>
-          <ul class="points">
-            <li data-i18n="globix_li1">Inicio con feed y categorías por país, ordenadas de la más activa a la menos activa.</li>
-            <li data-i18n="globix_li2">Suscripciones para vendedores con pago en Stripe y confirmación por webhook.</li>
-            <li data-i18n="globix_li3">Medición de eventos con Google Analytics 4 y Google Tag Manager.</li>
+          <ul class="points expandable-list" data-visible="3">
+<li data-i18n="globix_li1">Desarrollo de un marketplace multiplataforma con aplicación móvil y plataforma web, integrando comercio electrónico y funcionalidades de red social.</li>
+
+<li data-i18n="globix_li2">Sistema de feed dinámico y categorías segmentadas por país, organizadas según su nivel de actividad.</li>
+
+<li data-i18n="globix_li3">Integración de múltiples métodos de pago: Stripe, PayPal, Mercado Pago, Sistecrédito y pago contra entrega.</li>
+
+<li data-i18n="globix_li4">Automatización de la generación de órdenes de compra para transacciones en línea y pedidos contra entrega.</li>
+
+<li data-i18n="globix_li5">Integración de Skydropx para la gestión logística y los envíos de productos.</li>
+
+<li data-i18n="globix_li6">Sistema de suscripciones para vendedores con pagos recurrentes mediante Stripe y confirmación automatizada por webhooks.</li>
+
+<li data-i18n="globix_li7">Infraestructura cloud en AWS mediante Elastic Beanstalk, Amazon S3 y CloudFront.</li>
+
+<li data-i18n="globix_li8">Contenerización del backend con Docker para facilitar su despliegue, mantenimiento y portabilidad.</li>
+
+<li data-i18n="globix_li9">Diseño y desarrollo de APIs REST personalizadas para la comunicación entre aplicaciones, servicios externos y bases de datos.</li>
+
+<li data-i18n="globix_li10">Diseño, administración y optimización de bases de datos relacionales con PostgreSQL.</li>
+
+<li data-i18n="globix_li11">Gestión de usuarios, vendedores, productos, servicios, carritos de compra, direcciones y órdenes.</li>
+
+<li data-i18n="globix_li12">Implementación de funcionalidades sociales, incluyendo publicaciones multimedia, videos, comentarios y reacciones.</li>
+
+<li data-i18n="globix_li13">Arquitectura internacional con soporte multilingüe, múltiples monedas y personalización de contenido según el país del usuario.</li>
+
+<li data-i18n="globix_li14">Integración de servicios de geolocalización y geocodificación mediante Google Maps.</li>
+
+<li data-i18n="globix_li15">Implementación de notificaciones push para la comunicación con los usuarios de la aplicación móvil.</li>
+
+<li data-i18n="globix_li16">Integración avanzada de Google Analytics 4, Google Tag Manager, Meta Pixel y TikTok Pixel para la medición de eventos y conversiones.</li>
+
+<li data-i18n="globix_li17">Generación automatizada de catálogos XML e integración con Google Merchant Center.</li>
+
+<li data-i18n="globix_li18">Despliegue y mantenimiento de aplicaciones en entornos de producción, resolución de incidencias y optimización continua del rendimiento.</li>
+
+<li data-i18n="globix_li19">Gestión integral del ciclo de desarrollo de software, desde el análisis de requerimientos y diseño de arquitectura hasta la implementación y puesta en producción.</li>
           </ul>
           <div class="media-row">
             <figure class="shot shot-promo">
@@ -144,8 +176,10 @@
             <a class="card-link" href="https://play.google.com/store/apps/details?id=co.athenea.G_winkel&amp;hl=es_CO" target="_blank" rel="noopener noreferrer" data-i18n="globix_play">Descargar en Google Play →</a>
           </div>
           
-<ul class="chips" aria-label="Tecnologías de Globix" data-i18n-aria="aria_globix">
-  <li class="chip">JavaScript</li>
+<ul class="chips expandable-list"
+    data-visible="8"
+    aria-label="Tecnologías de Globix"
+    data-i18n-aria="aria_globix">  <li class="chip">JavaScript</li>
   <li class="chip">React</li>
   <li class="chip">React Native</li>
   <li class="chip">Next.js</li>
@@ -177,6 +211,11 @@
   <li class="chip">Android Studio</li>
   <li class="chip">Hermes</li>
   <li class="chip">i18n</li>
+  <li class="chip">Mercado Pago</li>
+  <li class="chip">Sistecrédito</li>
+  <li class="chip">Skydropx</li>
+  <li class="chip">Webhooks</li>
+  <li class="chip">Google Maps</li>
 </ul>
 
         </article>
@@ -244,7 +283,7 @@
 
 <div>
   <h3>Frontend</h3>
-  <ul class="chips">
+  <ul class="chips expandable-list" data-visible="6">
     <li class="chip">HTML5</li>
     <li class="chip">CSS3</li>
     <li class="chip">JavaScript</li>
@@ -262,7 +301,7 @@
 
 <div>
   <h3>Backend</h3>
-  <ul class="chips">
+  <ul class="chips expandable-list" data-visible="6">
     <li class="chip">Java</li>
     <li class="chip">Spring Boot</li>
     <li class="chip">Node.js</li>
@@ -277,7 +316,7 @@
 
 <div>
   <h3 data-i18n="stack_data">Datos</h3>
-  <ul class="chips">
+  <ul class="chips expandable-list" data-visible="6">
     <li class="chip">PostgreSQL</li>
     <li class="chip">MongoDB</li>
     <li class="chip">SQL</li>
@@ -289,7 +328,7 @@
 
 <div>
   <h3 data-i18n="stack_int">Integraciones y despliegue</h3>
-  <ul class="chips">
+  <ul class="chips expandable-list" data-visible="6">
     <li class="chip">AWS</li>
     <li class="chip">Docker</li>
     <li class="chip">Kubernetes</li>
